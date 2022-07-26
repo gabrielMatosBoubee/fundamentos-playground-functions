@@ -1,10 +1,16 @@
 // Desafio 1
-function compareTrue() {
-  // seu código aqui
+function compareTrue(animal, animal1) {
+  const girafa = true;
+  const elefante = true;
+  const macaco = false;
+  
+  if (animal == girafa && animal1 == elefante || animal == elefante && animal1 == girafa) {
+  return true}
+  else {return false}
 }
 
 // Desafio 2
-function calcArea() {
+function calcArea(base, height) {
   // seu código aqui
 }
 
