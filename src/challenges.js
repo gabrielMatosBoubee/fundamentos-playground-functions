@@ -55,8 +55,8 @@ function highestCount(test) {
 // Desafio 7
 function catAndMouse(mouse, cat1, cat2) {
  resultado = [];
- let x = mouse - cat1
- let y = mouse - cat2 
+ let x = mouse - cat1 ;
+ let y = mouse - cat2 ;
  if (x < 0){
   x *= (-1)
  }
@@ -93,11 +93,51 @@ function fizzBuzz(array) {
  return resposta
 }
 // Desafio 9
-function encode() {
-  // seu código aqui
+function encode(string) {
+  let resultado = [];
+  for (let index = 0; index < string.length; index += 1) {
+    let curso = string[index];
+    if (curso === "a") {
+      resultado.push(1)
+    }
+    else if (curso === "e") {
+      resultado.push(2)
+    }
+    else if (curso === "i") {
+      resultado.push(3)
+    }
+    else if (curso === "o") {
+      resultado.push(4)
+    }
+    else if (curso === "u"){
+      resultado.push(5)
+    }
+    else resultado.push(curso)
+  }
+ return resultado.join('')
 }
-function decode() {
-  // seu código aqui
+function decode(string1) {
+  let resultado = [];
+  for (let index = 0; index < string1.length; index += 1) {
+    let curso = string1[index];
+    if (curso === "1") {
+      resultado.push("a")
+    }
+    else if (curso === "2") {
+      resultado.push("e")
+    }
+    else if (curso === "3") {
+      resultado.push("i")
+    }
+    else if (curso === "4") {
+      resultado.push("o")
+    }
+    else if (curso === "5"){
+      resultado.push("u")
+    }
+    else resultado.push(curso)
+  }
+ return resultado.join('')
 }
 
 // Desafio 10
