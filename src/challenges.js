@@ -1,12 +1,10 @@
 // Desafio 1
 function compareTrue(animal, animal1) {
-  const girafa = true;
-  const elefante = true;
-  const macaco = false;
-  
-  if (animal == girafa && animal1 == elefante || animal == elefante && animal1 == girafa) {
-  return true}
-  else {return false}
+  let resultado = [];
+  if (animal && animal1) {
+  resultado = true}
+  else {resultado = false}
+  return resultado;
 }
 
 // Desafio 2
@@ -18,7 +16,7 @@ function calcArea(base, height) {
 // Desafio 3
 function splitSentence(frase) {
   let resultado = frase.split(" ")
-  return resultado
+  return resultado;
 }
 
 // Desafio 4
@@ -31,7 +29,7 @@ function concatName(array) {
 // Desafio 5
 function footballPoints(wins, ties) {
  let resultado = wins * 3 + ties
- return resultado
+ return resultado;
 }
 
 // Desafio 6
@@ -49,7 +47,7 @@ function highestCount(test) {
     }
   }
    console.log(resultado);
-  return resultado
+  return resultado;
 }
 
 // Desafio 7
@@ -70,7 +68,7 @@ function catAndMouse(mouse, cat1, cat2) {
  return "cat2"
  }
  else if (x == y){
-  return "os gatos trombam e o rato foge"
+  return "os gatos trombam e o rato foge";
  }
 }
 
@@ -90,7 +88,7 @@ function fizzBuzz(array) {
   }
   else resposta.push("bug!") 
 }
- return resposta
+ return resposta;
 }
 // Desafio 9
 function encode(string) {
@@ -114,7 +112,7 @@ function encode(string) {
     }
     else resultado.push(curso)
   }
- return resultado.join('')
+ return resultado.join('');
 }
 function decode(string1) {
   let resultado = [];
@@ -137,7 +135,7 @@ function decode(string1) {
     }
     else resultado.push(curso)
   }
- return resultado.join('')
+ return resultado.join('');
 }
 
 // Desafio 10
@@ -151,7 +149,7 @@ function techList(array, string) {
  for (let index = 0; index <array.length; index += 1){
  arrayDeObjetos.push({"tech":arrayOrdenado[index], "name": string}) 
 }
-return arrayDeObjetos
+return arrayDeObjetos;
 }
 
 module.exports = {
